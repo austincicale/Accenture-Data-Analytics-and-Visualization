@@ -2,20 +2,28 @@
 
 ### Project Overview
 
-This project serves as a simulated Data Analytics and Visualization job experience offered through Forage, a platform providing free virtual work experience programs. In this simulation, I assumed the role of an analyst working for Accenture. My task was to assist Social Buzz, a fictional social media company experiencing rapid growth, in implementing best practices for handling large datasets. Specifically, I analyzed their content categories to identify the top 5 categories with the highest aggregate popularity.
-
-This project 
-Accenture's Data Analytics and Visualization Job Simulation, offered through Forage
-
-Social Buzz
+This project is a Data Analytics and Visualization job simulation offered through Forage, a platform providing free virtual work experience that replicates daily tasks at top companies. In this simulation, I assumed the role of an analyst working for Accenture. My task was to assist Social Buzz, a fictional social media company experiencing rapid growth, in implementing best practices for handling large datasets. Specifically, I analyzed their content categories to identify the top 5 categories with the highest aggregate popularity.
 
 ### Requirements gathering
 
-Business Problem: The client has reached a massive scale within recent years and does not have the resources internally to handle it. Accenture is tasked to fulfill the following: Audit of big data practice, recommendations for IPO, analysis of popular content
+##### Business Problem 
+The client, Social Buzz, has experienced significant growth but lacks internal resources to manage the scale effectively. Accenture has been tasked with addressing the following key objectives:
 
-Personal task as a data analyst: Analysis of sample data sets with visualizations to understand the popularity of different content categories
+1. Conduct an audit of Social Buzz's big data practices.
+2. Provide recommendations for an IPO.
+3. Perform an analysis of popular content to better understand audience preferences.
 
-Provided with 7 data sets, each containing different columns and values
+##### Personal Task as Data Analyst 
+- Analyze sample datasets provided by Social Buzz and generate visualizations to identify the most popular content categories.
+- The goal is to determine the top 5 categories with the highest popularity based on reaction scores.
+
+##### Data Sets
+I was provided with 7 datasets, each containing different columns and values. The initial step involved identifying the necessary datasets required to complete the task effectively. Given that popularity is determined by reaction scores, the following datasets were selected:
+1. **Reaction**: Contains data on all reactions to content, including *Content ID*, *Reaction Type*, and *Datetime*.
+2. **Content**: Provides information about all posts, including *Content ID* and *Content Category*.
+3. **Reaction Types**: Describes *Reaction Type* and their associated *Reaction Score*.
+
+
 
 So, the first step is to use this data model to identify which datasets will be required to answer your business question - which is to to figure out the top 5 categories with the largest popularity.
 Your job is to identify which content categories are most popular. Popularity is determined based on reaction scores.
