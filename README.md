@@ -2,10 +2,10 @@
 
 ### Project Overview
 
-This project is a Data Analytics and Visualization job simulation offered through Forage, a platform providing free virtual work experience that replicates daily tasks at top companies. In this simulation, I assumed the role of an analyst working for Accenture. My task was to assist Social Buzz, a fictional social media company experiencing rapid growth, in implementing best practices for handling large datasets. Specifically, I analyzed their content categories to identify the top 5 categories with the highest aggregate popularity.
+This project is a Data Analytics and Visualization job simulation offered through [Forage](https://www.theforage.com/), a platform providing free virtual work experience that replicates daily tasks at top companies. In this simulation, I assumed the role of an analyst working for [Accenture](https://www.accenture.com/us-en?c=acn_glb_sembrandpuregoogle_13513493&n=psgs_0323&&c=ad_usadfy17_10000001&n=psgs_Brand-%7C-US-%7C-Exact_accenture&gad_source=1&gclid=CjwKCAjw8diwBhAbEiwA7i_sJeiI6Y78t8x7NfmFfNG29AQ7htWfyyP2V5E19Fo-96jXWMkeu-Z4BhoC65IQAvD_BwE&gclsrc=aw.ds). My task was to assist Social Buzz, a fictional social media company experiencing rapid growth, in implementing best practices for handling large datasets. Specifically, I analyzed their content categories to identify the top 5 categories with the highest aggregate popularity.
 
 ### Requirements gathering
-The key objectives, tasks, and data consideration are outlined below:
+The key objectives, tasks, and data considerations are outlined below:
 
 - #### Business Problem 
   The client, Social Buzz, has experienced significant growth but lacks internal resources to manage the scale effectively. Accenture has been   tasked with addressing the following key objectives:
@@ -38,19 +38,29 @@ The following steps were taken during the data-cleaning process:
    - **Content**: *User ID*, *URL*
 
 - #### Step 2: Handling Missing Values
-  Observations with missing values were removed from the datasets. This was achieved using Excel's Filter tool, allowing for efficient identification and removal of rows containing missing data.
+  Observations with missing values were removed from the datasets. This was achieved using Excel's "Filter" tool, allowing for efficient identification and removal of rows containing missing data.
 
 - #### Step 3: Addressing Duplicates
-  Upon examining the unique *Content Categories* in the **Content** dataset, it was discovered that some observations contained quotation marks, leading to duplicate entries. To address this issue, the Replace tool in Excel was utilized to remove all quotation marks.
+  Upon examining the unique *Content Categories* in the **Content** dataset, it was discovered that some observations contained quotation marks, leading to duplicate entries. To address this issue, the "Replace" tool in Excel was utilized to remove all quotation marks.
 
 ### Data Modeling
 The following steps were undertaken to identify the top 5 content categories and conduct any additional analysis:
 
 - #### Data Merging
+  Attributing the **Reaction** dataset as the base table, Excel's "VLookUp" formula was used to execute the following merges:
+  - Using *Content ID* as the "lookup_value", *Content Type* and *Content Category* were merged from the **Content** dataset to the **Reaction** dataset.
+  - Using *Reaction Type* as the "lookup_value", *Reaction Sentiment* and *Reaction Score* were merged from the **Reaction Types** dataset to the **Reaction** dataset.
+  
+  After merging the three data tables, we now have our final data set and can identify the most popular content categories. 
+  
+- #### Top 5 Content Categories
+  Create new tab in excel, get discrete list of categories by copying the content categories column and using Excel'S "Remove Duplicates" tool
+  18 unique categories
+  We want to add individual scores for each category
+  
+- #### Further Analysis
 
-- Top 5 Content Category Identification
-
-- Further Analysis
+- 
 Now we want to figure out the top 5 categories. To complete your data modelling, follow these steps:
 
 1. Create a final data set by merging your three tables together
