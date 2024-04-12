@@ -57,8 +57,40 @@ The following steps were undertaken to identify the top 5 content categories and
   Create new tab in excel, get discrete list of categories by copying the content categories column and using Excel'S "Remove Duplicates" tool
   18 unique categories
   We want to add individual scores for each category
+
+1. Animals
+2. Science
+3. Healthy Eating
+4. Technology
+5. Food
+
+Total Reaction Scores by Category
   
+<img width="505" alt="Screenshot 2024-04-11 at 9 13 03 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/c8edb421-dd4a-4772-bded-53a34d4d53c2">
+
 - #### Further Analysis
+
+Top 5 Reaction Types
+1. Heart
+2. Scared
+3. Peeking
+4. Hate
+5. Interested
+
+Reaction Type Count
+
+<img width="635" alt="Screenshot 2024-04-11 at 9 13 41 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/e24a20ce-c54a-4af7-a93a-fb4a42996c00">
+
+Top 5 Months
+1. May
+2. January
+3. August
+4. December
+5. July
+
+Number of Posts by Month
+
+<img width="517" alt="Screenshot 2024-04-11 at 9 14 14 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/f02891c8-879f-462f-9198-bde22a607f72">
 
 - 
 Now we want to figure out the top 5 categories. To complete your data modelling, follow these steps:
