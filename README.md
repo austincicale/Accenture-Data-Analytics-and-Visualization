@@ -34,8 +34,12 @@ The following steps were taken during the data-cleaning process:
 - #### Step 1: Removing Irrelevant Columns
   Variables removed from the following datasets:
   
-   - **Reaction**: *User ID*
-   - **Content**: *User ID*, *URL*
+
+    | Dataset       | Removed Variables                                                                          |
+    |---------------|-------------------------------------------------------------------------------|
+    | Reaction         | User ID                                               |
+    | Content       | User ID, URL                                         |
+
 
 - #### Step 2: Handling Missing Values
   Observations with missing values were removed from the datasets. This was achieved using Excel's "Filter" tool, allowing for efficient identification and removal of rows containing missing data.
@@ -54,9 +58,12 @@ The following steps were undertaken to identify the top 5 content categories and
   After merging the three data tables, we now have our final data set and can identify the most popular content categories. 
   
 - #### Top 5 Content Categories
-  Create new tab in excel, get discrete list of categories by copying the content categories column and using Excel'S "Remove Duplicates" tool
-  18 unique categories
-  We want to add individual scores for each category
+
+  To identif
+  Obtain a discrete list of categories by copying all categpories into a new tab and use Excel's "Remove Duplicates" tool
+  Add individual scores for each category, use SUMIF function for all observations for each category type
+  Sort list by descendung to see top 5
+  
 
 1. Animals
 2. Science
