@@ -65,13 +65,13 @@ The following steps were undertaken to identify the top 5 content categories and
   Sort list by descendung to see top 5
   
 
-1. Animals
-2. Science
-3. Healthy Eating
-4. Technology
-5. Food
+  ##### 1. Animals
+  ##### 2. Science
+  ##### 3. Healthy Eating
+  ##### 4. Technology
+  ##### 5. Food
 
-Total Reaction Scores by Category
+  Total Reaction Scores by Category
   
 <img width="505" alt="Screenshot 2024-04-11 at 9 13 03 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/c8edb421-dd4a-4772-bded-53a34d4d53c2">
 
