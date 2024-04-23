@@ -73,6 +73,8 @@ The following steps were undertaken to identify the top 5 content categories and
 
 - #### Further Analysis
 
+  In addition to assessing the popularity of content categories, I conducted an analysis on the popularity of reaction types. Similarly, I compiled all reaction type observations into a new Excel tab and generated a distinct list of reaction types using the 'Remove Duplicates' tool. For each unique reaction type, I employed the 'COUNTIF' function across all observations in the cleaned dataset to determine the frequency of each reaction type's occurrence. Below are the top 5 most popular reaction types, along with a bar chart illustrating their respective frequencies. 
+
   - #### Top 5 Reaction Types: 
     ##### 1. Heart
     ##### 2. Scared
@@ -83,6 +85,9 @@ The following steps were undertaken to identify the top 5 content categories and
     #### *Reaction Type Count*
 
     <img width="635" alt="Screenshot 2024-04-11 at 9 13 41 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/e24a20ce-c54a-4af7-a93a-fb4a42996c00">
+
+  My final analysis aimed to identify the most popular months based on the frequency of posts. In the final dataset, the *Datetime* variable signifies the timestamp of each post. To facilitate analysis, I created a new column in Excel using the "TEXT" function to extract the month from each *Datetime* observation. Subsequently, I generated a list of each distinct month in a new Excel. Utilizing the newly created column containing only the months extracted from the *Datetime* varriable, I used the "COUNTIF" function to tally the number of posts for each month. Below are the top 5 months with the highest post count, accompanied by a visualization illustrating the distribution of posts across each month.
+    
 
   - #### Top 5 Months:
     ##### 1. May
@@ -97,4 +102,4 @@ The following steps were undertaken to identify the top 5 content categories and
 
 ### Presentation
 
-[here](AccentureJobSim.pptx) 
+After completing all my data analysis tasks, I was advised to create a presentation that would hypothetically be presented to the team at Social Buzz, highlighting the process of my analysis and key insights that were uncovered. My presentation can be found [here](AccentureJobSim.pptx).
