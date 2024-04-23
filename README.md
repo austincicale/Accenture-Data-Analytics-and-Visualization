@@ -99,21 +99,5 @@ The following steps were undertaken to identify the top 5 content categories and
 
     <img width="517" alt="Screenshot 2024-04-11 at 9 14 14 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/f02891c8-879f-462f-9198-bde22a607f72">
 
-- 
-Now we want to figure out the top 5 categories. To complete your data modelling, follow these steps:
 
-1. Create a final data set by merging your three tables together
-
-We recommend using the Reaction table as your base table, then first join the relevant columns from your Content data set, and then the Reaction Types data set.
-Hint: You can use a “VLookUp” formula
- 
-2. Figure out the Top 5 performing categories
-
-Add up the total scores for each category.
-Hint: You can use the “Sum If” formula
-
-The end result should be one spreadsheet which contains:
-
-A cleaned dataset
-The top 5 categories
 
