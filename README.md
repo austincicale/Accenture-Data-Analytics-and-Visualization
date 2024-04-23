@@ -99,5 +99,6 @@ The following steps were undertaken to identify the top 5 content categories and
 
     <img width="517" alt="Screenshot 2024-04-11 at 9 14 14 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/f02891c8-879f-462f-9198-bde22a607f72">
 
+### Presentation
 
-
+[here](AccentureJobSim.pptx) 
