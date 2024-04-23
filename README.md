@@ -21,9 +21,9 @@ The key objectives, tasks, and data considerations are outlined below:
 - #### Data Sets
   I was provided with 7 datasets, each containing different columns and values. The initial step involved identifying the necessary datasets to complete the task effectively. Given that popularity is determined by reaction scores, the following datasets were selected:
 
-  1. **Reaction**: Contains data on all reactions to content, including *Content ID*, *Reaction Type*, and *Datetime*.
-  2. **Content**: Provides information about all posts, including *Content ID* and *Content Category*.
-  3. **Reaction Types**: Describes *Reaction Type* and their associated *Reaction Score*.
+  1. [Reactions](Reactions.csv): Contains data on all reactions to content, including *Content ID*, *Reaction Type*, and *Datetime*.
+  2. [Content](Content.csv): Provides information about all posts, including *Content ID* and *Content Category*.
+  3. [Reaction Types](ReactionTypes.csv): Describes *Reaction Type* and their associated *Reaction Score*.
 
 - #### Approach
   To determine the popularity of different content categories, the analysis involves aggregating the reaction scores for each category. Therefore, it is essential for the *Content Category* and *Reaction Score* variables to be in the same data set. This can be achieved by merging the three selected data sets by common variables.  
@@ -37,7 +37,7 @@ The following steps were taken during the data-cleaning process:
 
     | Dataset       | Removed Variables                                                                          |
     |---------------|-------------------------------------------------------------------------------|
-    | Reaction         | User ID                                               |
+    | Reactions         | User ID                                               |
     | Content       | User ID, URL                                         |
 
 
@@ -51,19 +51,15 @@ The following steps were taken during the data-cleaning process:
 The following steps were undertaken to identify the top 5 content categories and conduct any additional analysis:
 
 - #### Data Merging
-  Attributing the **Reaction** dataset as the base table, Excel's "VLookUp" formula was used to execute the following merges:
-  - Using *Content ID* as the "lookup_value", *Content Type* and *Content Category* were merged from the **Content** dataset to the **Reaction** dataset.
-  - Using *Reaction Type* as the "lookup_value", *Reaction Sentiment* and *Reaction Score* were merged from the **Reaction Types** dataset to the **Reaction** dataset.
+  Attributing the **Reactions** dataset as the base table, Excel's "VLOOKUP" formula was used to execute the following merges:
+  - Using *Content ID* as the "lookup_value", *Content Type* and *Content Category* were merged from the **Content** dataset to the **Reactions** dataset.
+  - Using *Reaction Type* as the "lookup_value", *Reaction Sentiment* and *Reaction Score* were merged from the **Reaction Types** dataset to the **Reactions** dataset.
   
-  After merging the three data tables, we now have our final data set and can identify the most popular content categories. 
+  After merging the three data tables, we have our [final data set](FinalData.xlsx) and can identify the most popular content categories. 
   
 - #### Top 5 Content Categories
 
-  To identif
-  Obtain a discrete list of categories by copying all categpories into a new tab and use Excel's "Remove Duplicates" tool
-  Add individual scores for each category, use SUMIF function for all observations for each category type
-  Sort list by descendung to see top 5
-  
+  After copying all content category observations into a new Excel tab, a discrete list of the categories was obtained using Excel's "Remove Duplicates" tool. For each unique category, the "SUMIF" function was used to accumulate reaction scores among all observations from the cleaned data set. Once the aggregate reaction scores were established for each content category, the list of categories was sorted in descending order to identify the top 5 most popular. Below are the top 5 categories, accompanied by a bar chart illustrating the total reaction scores for all content categories.
 
   ##### 1. Animals
   ##### 2. Science
