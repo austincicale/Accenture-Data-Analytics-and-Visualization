@@ -86,7 +86,7 @@ The following steps were undertaken to identify the top 5 content categories and
 
     <img width="635" alt="Screenshot 2024-04-11 at 9 13 41 PM" src="https://github.com/austincicale/Accenture_Data_Analytics_and_Visualization/assets/77798880/e24a20ce-c54a-4af7-a93a-fb4a42996c00">
 
-  My final analysis aimed to identify the most popular months based on the frequency of posts. In the final dataset, the *Datetime* variable signifies the timestamp of each post. To facilitate analysis, I created a new column in Excel using the "TEXT" function to extract the month from each *Datetime* observation. Subsequently, I generated a list of each distinct month in a new Excel. Utilizing the newly created column containing only the months extracted from the *Datetime* varriable, I used the "COUNTIF" function to tally the number of posts for each month. Below are the top 5 months with the highest post count, accompanied by a visualization illustrating the distribution of posts across each month.
+  My final analysis aimed to identify the most popular months based on the frequency of posts. In the final dataset, the *Datetime* variable signifies the timestamp of each post. To facilitate analysis, I created a new column in Excel using the "TEXT" function to extract the month from each *Datetime* observation. Subsequently, I generated a list of each distinct month in a new Excel tab. Utilizing the newly created column containing only the months extracted from the *Datetime* varriable, I used the "COUNTIF" function to tally the number of posts for each month. Below are the top 5 months with the highest post count, accompanied by a visualization illustrating the distribution of posts across each month.
     
 
   - #### Top 5 Months:
